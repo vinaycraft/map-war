@@ -13,9 +13,7 @@ const Leaderboard = () => {
     activeTab, 
     setActiveTab,
     getLocalLeaderboard,
-    getTeamLeaderboard,
     getUserRank,
-    getTeamRank,
     isLoading 
   } = useLeaderboard();
 

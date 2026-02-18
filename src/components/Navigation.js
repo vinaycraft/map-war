@@ -6,7 +6,7 @@ import '../styles.css';
 const Navigation = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const { user, isAuthenticated, logout } = useAuth();
+  const { isAuthenticated, logout } = useAuth();
   
   const isActive = (path) => {
     return location.pathname === path;

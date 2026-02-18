@@ -4,7 +4,7 @@ import { useAuth } from '../contexts/AuthContext';
 import '../styles.css';
 
 const Profile = () => {
-  const { user, stats, territories, logout } = useAuth();
+  const { user, stats, territories } = useAuth();
   const [isEditing, setIsEditing] = useState(false);
   const [editForm, setEditForm] = useState({
     name: user?.name || '',

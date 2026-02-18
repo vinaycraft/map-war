@@ -6,8 +6,8 @@ import { useLeaderboard } from '../contexts/LeaderboardContext';
 import '../styles.css';
 
 const Home = () => {
-  const { user, isAuthenticated, stats, territories } = useAuth();
-  const { leaderboard, getLocalLeaderboard } = useLeaderboard();
+  const { user, isAuthenticated, stats } = useAuth();
+  const { leaderboard } = useLeaderboard();
 
   // Get top players from global leaderboard for local display
   const topPlayers = leaderboard.slice(0, 3);
