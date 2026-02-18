@@ -1,0 +1,38 @@
+{
+  "name": "map-war-game-database",
+  "version": "1.0.0",
+  "description": "Database schema and migrations for Map War Game",
+  "main": "migrate.js",
+  "scripts": {
+    "migrate": "node migrate.js up",
+    "rollback": "node migrate.js down",
+    "status": "node migrate.js status",
+    "setup": "npm install && npm run migrate",
+    "reset": "node migrate.js rollback 001_create_initial_tables.sql && npm run migrate"
+  },
+  "dependencies": {
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "keywords": [
+    "database",
+    "migrations",
+    "postgresql",
+    "map-war-game"
+  ],
+  "author": "Map War Game Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/map-war-game.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/map-war-game/issues"
+  },
+  "homepage": "https://github.com/your-org/map-war-game#readme"
+}
