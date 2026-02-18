@@ -1,12 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { 
-  getCurrentPosition, 
   watchPosition, 
   clearWatch, 
   calculateDistance,
-  formatDistance, 
-  formatTime, 
-  formatPace 
+  formatDistance
 } from '../utils/gpsUtils';
 
 const RunTracker = ({ onPathUpdate, onStatsUpdate }) => {
